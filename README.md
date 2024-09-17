@@ -42,6 +42,8 @@ To test the garbage collector, follow these steps:
 
 	```bash
 	git clone https://github.com/deniz-oezdemir/simple-garbage-collector
+	cd simple-garbage-collector
+	git submodule update --init --recursive
 	cd libft
 	make
 	cd ..
@@ -61,6 +63,12 @@ To test the garbage collector, follow these steps:
 
 The output should show no memory leaks.
 
+## Dependencies
+
+The garbage collector has few dependencies on the following functions and data structure from the [libft](https://github.com/deniz-oezdemir/libft) project: `ft_calloc`, `ft_putstr_fd`, and the `t_list` definition.
+
+In addition to those dependencies, the test in the main function also relies on `ft_putnbr_fd` and `ft_strlcpy` from the [libft](https://github.com/deniz-oezdemir/libft).
+
 ## Additional Information
 
 For each use of `gc_calloc`, you will notice two allocations. This is because `gc_calloc` allocates memory for both the data itself and a node to store the pointer to the allocated memory.
@@ -68,3 +76,4 @@ For each use of `gc_calloc`, you will notice two allocations. This is because `g
 If you need to free specific allocated memory during program execution and not just at program exit, you can still manually allocate and free memory using `malloc`, `ft_calloc`, and `free`.
 
 If you found this helpful or have any suggestions for improvements, I would love to hear from you! Feel free to reach out or make a pull request to contribute. Your feedback and contributions are greatly appreciated.
+
