@@ -41,7 +41,7 @@ To test the garbage collector, follow these steps:
 1. Clone this repository and compile the `libft` library:
 
 	```bash
-	git clone https://github.com/deniz-oezdemir/simple-garbage-collector
+	git clone https://github.com/deniz-oezdemir/simple_garbage_collector
 	cd simple-garbage-collector
 	git submodule update --init --recursive
 	cd libft
