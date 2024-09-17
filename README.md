@@ -42,7 +42,7 @@ To test the garbage collector, follow these steps:
 
 	```bash
 	git clone https://github.com/deniz-oezdemir/simple_garbage_collector
-	cd simple-garbage-collector
+	cd simple_garbage_collector
 	git submodule update --init --recursive
 	cd libft
 	make
